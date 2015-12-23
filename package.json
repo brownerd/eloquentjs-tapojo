@@ -13,25 +13,24 @@
     "url": "https://github.com/brownerd/eloquentjs-tapojo/issues"
   },
   "homepage": "https://github.com/brownerd/eloquentjs-tapojo#readme",
-    "scripts": {
-      "build": "webpack",
-      "cov": "npm run cov:clean && npm run cov:generate",
-      "cov:clean": "rimraf coverage",
-      "cov:generate": "babel-node node_modules/.bin/isparta cover --report text --report html test/index.js",
-      "cover-unused": "babel-node node_modules/.bin/isparta cover --report text --report html ./test/*_tape.js",
-      "lintest": "watch 'clear && npm run -s lint && npm -s test' js test",
-      "lint": "eslint js test",
-      "lister": "babel-node file-lister.js",
-      "start": "webpack-dev-server --inline --hot --config webpack.config.babel.js",
-      "arrayz": "webpack-dev-server --inline --hot --config webpack.config.babel.js -D arrayz -F",
-      "test": "babel-node ./test/index.js | faucet",
-      "validate": "npm outdated --depth 0"
-    },
-  "dependencies": {
-    "babel": "^5.8.21",
-    "babel-core": "^5.8.22"
+  "scripts": {
+    "build": "webpack",
+    "cov": "npm run cov:clean && npm run cov:generate",
+    "cov:clean": "rimraf coverage",
+    "cov:generate": "babel-node node_modules/.bin/isparta cover --report text --report html test/index.js",
+    "cover-unused": "babel-node node_modules/.bin/isparta cover --report text --report html ./test/*_tape.js",
+    "lintest": "watch 'clear && npm run -s lint && npm -s test' js test",
+    "lint": "eslint js test",
+    "lister": "babel-node file-lister.js",
+    "start": "webpack-dev-server --inline --hot --config webpack.config.babel.js",
+    "arrayz": "webpack-dev-server --inline --hot --config webpack.config.babel.js -D arrayz -F",
+    "test": "babel-node ./test/index.js | faucet",
+    "validate": "npm outdated --depth 0"
   },
+  "dependencies": {},
   "devDependencies": {
+    "babel": "6.3.26",
+    "babel-cli": "6.3.17",
     "babel-core": "6.3.15",
     "babel-eslint": "4.1.6",
     "babel-loader": "6.2.0",

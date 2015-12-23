@@ -10,30 +10,34 @@ As a bonus assignment, modify your range function to take an optional third argu
 // input (1, 5)
 // output [1, 2, 3, 4, 5]
 
-var range = function (min, max) {
+export var range = function (min, max) {
 	var arr = []
-	for (var i = min; i < max; i++) {
-		arr.push(i + 1)
+	for (var i = min; i <= max; i++) {
+		arr.push(i)
 	}
 	return arr
 }
 
-var ranger = function (min, max, inc) {
+// console.log(range([1, 5]))
+
+export var ranger = function (min, max, inc) {
 	var arr = []
-	for (var i = min; i < max; i++) {
-		arr.push(i + inc)
+	for (var i = min; i <= max; i++) {
+		if (i % inc === 1) {
+			arr.push(i)
+		}
 	}
 	return arr
 }
 
-console.log(ranger(1, 10, 2))
+// console.log(ranger(1, 10, 2))
 
-console.log(range(12, 18))
+// console.log(range(12, 18))
 
-var sum = function (arr) {
+export var sum = function (arr) {
 	var total = arr.reduce(function (a, b) {
 		return a + b
 	}, 0)
 	return total
 }
-console.log(sum([1, 2, 3, 4, 5]))
+// console.log(sum([1, 2, 3, 4, 5]))

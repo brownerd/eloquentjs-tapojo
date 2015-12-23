@@ -8,7 +8,7 @@ Write a function countBs that takes a string as its only argument and returns a 
 Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 */
 
-var countBs = function (str) {
+export var countBs = function (str) {
   var total = []
   str.split('')
      .forEach(function (item) {
@@ -19,11 +19,11 @@ var countBs = function (str) {
   return total.length
 }
 
-console.log(countBs('BasdflkBasdflkjasdfB'))
+// console.log(countBs('BasdflkBasdflkjasdfB'))
 
 
 
-var countChar = function (str, searchTerm) {
+export var countChar = function (str, searchTerm) {
   var total = []
   str.split('')
      .forEach(function (item) {
@@ -34,4 +34,4 @@ var countChar = function (str, searchTerm) {
   return total.length
 }
 
-console.log(countChar('asdlfkjawel;kawjdf;lkajsdf;lkajsdf;lkjasdf', 'e'))
+// console.log(countChar('asdlfkjawel;kawjdf;lkajsdf;lkajsdf;lkjasdf', 'e'))
