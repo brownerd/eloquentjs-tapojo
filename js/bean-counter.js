@@ -19,6 +19,10 @@ var countBs = function (str) {
   return total.length
 }
 
+console.log(countBs('BasdflkBasdflkjasdfB'))
+
+
+
 var countChar = function (str, searchTerm) {
   var total = []
   str.split('')
@@ -30,4 +34,4 @@ var countChar = function (str, searchTerm) {
   return total.length
 }
 
-console.log(countChar('asdlfkjawel;kawjdf;lkajsdf;lkajsdf;lkjasdf', 'e'));
+console.log(countChar('asdlfkjawel;kawjdf;lkajsdf;lkajsdf;lkjasdf', 'e'))

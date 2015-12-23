@@ -21,21 +21,22 @@ When you have a program that generates this pattern, define a variable size = 8 
 
 
 
-var size = 8;
+var size = 8
 
-var board = "";
+var board = ''
 
 for (var y = 0; y < size; y++) {
   for (var x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0)
-      board += " ";
-    else
-      board += "#";
+    if ((x + y) % 2 === 0) {
+      board += ' '
+    } else {
+      board += '#'
+    }
   }
-  board += "\n";
+  board += '\n'
 }
 
-console.log(board);
+console.log(board)
 
 
 

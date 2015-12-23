@@ -12,13 +12,12 @@ for (var i = 1; i <= limit; i++) {
   } else if (i % 5 === 0) {
     console.log('Buzz')
   } else if (i % 3 === 0) {
-    console.log('Fizz');
+    console.log('Fizz')
   } else {
-    console.log(i);
+    console.log(i)
   }
 }
 
-var limit = 0
 while (limit < 100) {
   limit++
   if (limit % 15 === 0) {
@@ -26,8 +25,8 @@ while (limit < 100) {
   } else if (limit % 5 === 0) {
     console.log('Buzz')
   } else if (limit % 3 === 0) {
-    console.log('Fizz');
+    console.log('Fizz')
   } else {
-    console.log(limit);
+    console.log(limit)
   }
 }

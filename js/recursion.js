@@ -18,20 +18,27 @@ Test it on 50 and 75. See how it behaves on –1. Why? Can you think of a way to
 
 // It's a function that reduces a number by 2 until 1 or zero is reached. The number is even if zero is reached and false if 1 is reached
 
+function isEven (n) {
+  //debugger
+  if (n === 0) {
+    return true
 
-function isEven(n) {
-  debugger
-  if (n == 0)
-    return true;
-  else if (n == 1)
-    return false;
-  else if (n < 0)
-    return isEven(-n);
-  else
-    return isEven(n - 2);
+  } else if (n === 1) {
+
+    return false
+
+  } else if (n < 0) {
+
+    return isEven(-n)
+
+  } else {
+
+    return isEven(n - 2)
+
+  }
 }
 
 
-console.log(isEven(50)); // → true
-console.log(isEven(75)); // → false
-console.log(isEven(-1)); // → false
+console.log(isEven(50)) // → true
+console.log(isEven(75)) // → false
+console.log(isEven(-1)) // → false
